@@ -2,7 +2,7 @@ from dash import html, dcc, Dash, Output, Input, State
 import pickle
 
 app = Dash(__name__)
-server = dash.server
+server = app.server
 
 model = pickle.load(open("model.pkl", "rb"))
 
